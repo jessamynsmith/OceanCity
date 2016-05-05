@@ -1,0 +1,17 @@
+.dishContainer{
+	display: -webkit-flex;
+	display: flex;
+	width:80%;	
+	border-radius: 10px;
+	border:solid 1px;
+	padding: 3px;
+}
+
+.dishName{
+	display:flex;
+}
+
+.dishCost{
+	display:flex;
+	margin-left: 80%;
+}

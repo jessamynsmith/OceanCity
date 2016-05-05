@@ -1,0 +1,12 @@
+<div>
+	<h1>Menu</h1>
+	<div ng-repeat='dishSection in menu'>
+		<h2>{{ dishSection.title }}</h2>
+		<div ng-repeat='dish in dishSection.dishes'>
+			<p>{{ dish.name }}</p>
+			<p><b>Ingredients:</b> {{ dish.ingredients }}</p>
+			<p><b>Allergens:</b> {{ dish.allergens }}</p>
+			<p><b>Price: </b>{{ dish.price }}</p>
+		</div>
+	</div>
+</div>
