@@ -3,10 +3,14 @@
 	<div ng-repeat='dishSection in menu'>
 		<h2>{{ dishSection.title }}</h2>
 		<div ng-repeat='dish in dishSection.dishes'>
-			<p>{{ dish.name }}</p>
-			<p><b>Ingredients:</b> {{ dish.ingredients }}</p>
-			<p><b>Allergens:</b> {{ dish.allergens }}</p>
-			<p><b>Price: </b>{{ dish.price }}</p>
+			<div class="dishContainer">
+				<div class="dishName">{{ dish.id}} {{ dish.name }} 
+				<!-- <td><img ng-src="{{(displayAllergens(dish.ingredients) !=  null) ? 'displayAllergens(dish.ingredients)' : ' '}}" width=20 height=20></td> -->
+				<img class="allergen" ng-src="{{displayAllergens(dish.ingredients)}}" /> 
+				</div>
+				<div class="dishCost"><b>&euro; </b>{{ toFixed(dish.price) }}</div>
+				<div class="dishIngredients">{{ dish.ingredients }}</div>
+			</div>
 		</div>
 	</div>
 </div>

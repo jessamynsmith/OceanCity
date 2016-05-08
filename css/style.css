@@ -1,17 +1,54 @@
+#mobileContaier{
+	width:100%;
+
+}
+#tabletContainer{
+	width:60%;
+}
+
+.container{
+	font-size: 14px;
+}
+.menuContainer{
+	display: inline-block;
+}
 .dishContainer{
-	display: -webkit-flex;
-	display: flex;
-	width:80%;	
+	display: inline-block;
+	width:460px;	
 	border-radius: 10px;
 	border:solid 1px;
 	padding: 3px;
+	/*margin: 3px;*/
+	/*border-radius: 10px;*/
 }
 
 .dishName{
-	display:flex;
+	display: inline-block;
+	font-family: monospace;
+	text-transform: uppercase;
+	width: 400px;
+	/*border:solid 1px;*/
+}
+
+.dishIngredients{
+	color: red;
+	width: 400px;
+	margin-bottom:12px; 
+	/*border:solid 1px;*/
 }
 
 .dishCost{
-	display:flex;
-	margin-left: 80%;
+	display: inline;
+	right: 50px;
+/*	margin-left:51%; 
+*/	width:15%;
+	/*border:solid 1px;*/
 }
+
+.allergen{
+	vertical-align: top;
+	width: 20px;
+	height: 20px;
+}
+
+
