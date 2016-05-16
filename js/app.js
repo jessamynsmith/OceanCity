@@ -1,5 +1,4 @@
-var app = angular.module("oceanCity",[]);
-
+var app = angular.module("oceanCity",['ngRoute']);
 
 
 app.config(['$routeProvider', function($routeProvider) {
